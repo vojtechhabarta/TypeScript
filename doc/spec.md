@@ -4540,7 +4540,7 @@ The type parameters of a generic class are in scope and accessible in a construc
 
 Similar to functions, only the constructor implementation (and not constructor overloads) can specify default value expressions for optional parameters. It is a compile-time error for such default value expressions to reference `this`. When the output target is ECMAScript 3 or 5, for each parameter with a default value, a statement that substitutes the default value for an omitted argument is included in the JavaScript generated for the constructor function.
 
-A parameter of a *ConstructorImplementation* may be prefixed with a `public`, `private`, or `protected` modifier. This is called a ***parameter property declaration*** and is shorthand for declaring a property with the same name as the parameter and initializing it with the value of the parameter. For example, the declaration
+A parameter of a *ConstructorImplementation* may be prefixed with a `public`, `private`, `protected`, or `readonly` modifier. This is called a ***parameter property declaration*** and is shorthand for declaring a property with the same name as the parameter and initializing it with the value of the parameter. For example, the declaration
 
 ```TypeScript
 class Point {  
