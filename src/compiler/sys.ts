@@ -655,7 +655,7 @@ namespace ts {
                         const files = Java.from(paths).sort();
                         const directories: string[] = [];
                         for (const current of files) {
-                            if (!contains(exclude, getCanonicalPath(current))) {
+                            if (!contains(exclude, getCanonicalPath(normalizeSlashes(current)))) {
                                 if (fileExists(current)) {
                                     if (!extension || fileExtensionIs(current, extension)) {
                                         result.push(current);
